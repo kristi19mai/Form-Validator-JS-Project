@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Noto Sans Mono, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='84' viewBox='0 0 126 84'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23565353' fill-opacity='0.05'%3E%3Cpath d='M126 83v1H0v-2h40V42H0v-2h40V0h2v40h40V0h2v40h40V0h2v83zm-2-1V42H84v40h40zM82 42H42v40h40V42zm-50-6a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm96 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm-42 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm30-12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM20 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 24a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm54 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM50 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM50 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm54-12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM92 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM92 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24-42a4 4 0 1 1 0-8 4 4 0 0 1 0 8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 550px;
+  height: 800px;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  letter-spacing: 3px;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.message {
+  text-align: center;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.form-container {
+  width: 90%;
+}
+
+.input-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0px;
+  letter-spacing: 2px;
+}
+
+button {
+  width: 100%;
+  padding: 15px 0px;
+  font-size: 20px;
+  margin: 25px 0px;
+  letter-spacing: 3px;
+  background: rgba(49, 116, 69, 0.4);
+  outline: none;
+  border: 0.5px solid rgba(49, 116, 69, 0.4);
+  border-radius: 5px;
+  font-family: Noto Sans Mono, serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input,
+input:focus:required:placeholder-shown {
+  height: 27px;
+  border-radius: 5px;
+  outline: none;
+  border: 0.5px solid black;
+  background: rgba(255, 255, 255, 0.4);
+  font-family: Noto Sans Mono, serif;
+}
+
+input:invalid {
+  background: rgba(236, 165, 165, 0.4);
+  border: 0.5px solid rgba(236, 165, 165, 0.4);
+}
+
+input:valid {
+  background: rgba(49, 116, 69, 0.4);
+  border: 0.5px solid rgba(49, 116, 69, 0.4);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 19px;
+  }
+
+  .input-item {
+    margin: 15px 0px;
+    letter-spacing: 1px;
+  }
+
+  button {
+    letter-spacing: 2px;
+    margin: 20px 0px;
+    font-size: 16px;
+  }
+
+  .container {
+    height: 650px;
+    width: 90%;
+  }
+}

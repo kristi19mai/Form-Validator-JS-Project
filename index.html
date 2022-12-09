@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validater</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <div class="header" id="header">
+        <h1>Sign Up Today!</h1>
+      </div>
+      <!-- Form-container Form -->
+      <div class="form-container">
+        <form class="form">
+          <div class="input-item">
+            <label for="name">Full Name</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Full Name"
+              required
+              minlength="3"
+              name="name"
+            />
+          </div>
+          <div class="input-item">
+            <label for="phone">Phone Number</label>
+            <input
+              id="phone"
+              type="tel"
+              placeholder="555-555-5555"
+              pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}$"
+              name="phone"
+              required
+              title="Please enter yuor phone number in the format xxx-xxx-xxxx"
+            />
+          </div>
+          <div class="input-item">
+            <label for="email">E-mail Address</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="email@art.gmail"
+              name="email"
+              required
+            />
+          </div>
+          <div class="input-item">
+            <label for="website">Website URL</label>
+            <input
+              id="website"
+              type="url"
+              placeholder="http://artkristi.com"
+              name="website"
+              required
+            />
+          </div>
+          <div class="input-item">
+            <label for="password1">Password</label>
+            <input
+              id="password1"
+              autocomplete="off"
+              type="password"
+              placeholder="Create Password (Min. 8 characters)"
+              name="password"
+              required
+            />
+          </div>
+          <div class="input-item">
+            <label for="password2">Confirm Password</label>
+            <input
+              id="password2"
+              type="password"
+              placeholder="Confirm Password"
+              name="password2"
+              required
+            />
+          </div>
+          <div class="submit">
+            <button type="submit" id="submit">Register</button>
+          </div>
+        </form>
+        <!-- Text container -->
+        <div class="message-container">
+          <h1 class="message">Don't Hezitate!</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- Your password needs to be between 8 and 30 characters long and contain one uppercase letter, one symbol, and a number. -->
